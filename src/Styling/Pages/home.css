@@ -1,0 +1,46 @@
+
+.greeting{
+    display: flex;
+    height: 30em;
+    background-color: rgb(230, 230, 230);
+}
+.Welcome{
+    width: 40%;
+}
+.greeting h1{
+    font-size: 5em;
+    margin-left: 0.3em;
+}
+.greeting .descripcion{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    background-image: url(/src/Assets/6AJMTNP6RVDM5HX2HHGO2JNPPQ.jpeg);
+    background-repeat: no-repeat;
+    background-position:0px;
+    background-size: cover;
+    text-align: left;
+    font-size: 1.5em;
+    color: white;
+
+}
+.greeting .descripcion p{
+  margin-left: 1em;
+  width: 95%;
+}
+.Features{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    margin-top: 5em;
+    background-color: rgb(255, 255, 255);
+    color: white;
+}
+.Features div {
+    border: solid red;
+}
+.Features img{ 
+    width: 10em;
+}

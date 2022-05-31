@@ -1,0 +1,29 @@
+.NavBarContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 4.8em;
+    background-color: black ;
+    color: white;
+}
+.NavBarContainer .logo {
+    display: flex;
+   background-color: white;
+    width: 40%;
+    color: black;
+    font-size: 2em;
+   
+}
+.NavBarContainer .sections{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+.NavBarContainer .sections button {
+    border: none;
+    background-color: inherit;
+    font-size: 1.5em;
+}
+.NavBarContainer a{
+    text-decoration: none;
+    color: white;
+}
