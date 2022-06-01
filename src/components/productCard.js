@@ -26,6 +26,11 @@ export default function ProductCard(props) {
           -{props.Category} {props.Name}
         </div>
       </div>
+      <div>
+        <button>
+          Add to Cart
+        </button>
+      </div>
     </div>
   )
 }

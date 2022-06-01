@@ -4,6 +4,19 @@
     width: 80%;
     margin: auto;
 }
+.CategoriesDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid rgb(168, 168, 168);
+    border-radius: 5px;
+    padding: 0px 2em;
+    margin: 1em 0em;
+    height: 3em;
+}
+.CategoriesDiv h3{
+    margin: 0px;
+}
 .categorieList{
 position: absolute;
 right: 6em;

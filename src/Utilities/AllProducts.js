@@ -27,7 +27,7 @@ const Products = [
         img:rtx3070,
         imgPrev:rtx3070Pre ,
         price:"225000",
-        category:"GPU",
+        category:"Gpu",
         id:"3070"          
     },
     {   
@@ -35,14 +35,14 @@ const Products = [
         img: rtx3080,
         imgPrev:rtx3080Pre ,
         price:"250000",
-        category:"GPU",
+        category:"Gpu",
         id:"3080"          
     },
     { name:"Nvidia 3090",
     img: rtx3090,
     imgPrev:rtx3090Pre ,
     price:"435000",
-    category:"GPU",
+    category:"Gpu",
     id:"3090"          
     },
     {
@@ -51,39 +51,39 @@ const Products = [
         imgPrev:rtx1660superPrev ,
         price:"85000",
         id:"1660Super",
-        category:"GPU"
+        category:"Gpu"
     },
     {
         name:"PALIT NVIDIA GEFORCE RTX 2060 SUPER DUAL 8GB",
         img: rtx2060super,
         imgPrev:rtx2060superPrev ,
         price:"115000",
-        category:"GPU",
+        category:"Gpu",
         id:"2060Super"
     },
     {
         name:"ASUS ROG STRIX B660-A GAMING WIFI D4 S1700",
         img: Asusb660,
         price:"23500",
-        category:"MotherBoard"
+        category:"Mother Board"
     },
     {
         name:"ASUS X570-PLUS WIFI TUF GAMING BOX ATX AM4",
         img: Asusx570,
         price:"45000",
-        category:"MotherBoard"
+        category:"Mother Board"
     },
     {
         name:"GIGABYTE B560 AORUS PRO AX S1200",
         img: AsusB560,
         price:"33540",
-        category:"MotherBoard"
+        category:"Mother Board"
     },
     {
         name:"MSI PRO Z690-A DDR4 S1700 12VA GEN WIFI",
         img: MSIZ690,
         price:"20865",
-        category:"MotherBoard"
+        category:"Mother Board"
     },
     {
         name:"PROCESADOR INTEL CORE I3 10100F 4.3GHZ S1200",
@@ -108,31 +108,31 @@ const Products = [
         name:"Nvidia 3060",
         img: Pulsador,
         price:"",
-        category:""
+        category:"Accesories"
     },
     {
         name:"Nvidia 3060",
         img: add2psu,
         price:"",
-        category:""
+        category:"Accesories"
     },
     {
         name:"Nvidia 3060",
         img: m2apcie,
         price:"",
-        category:""
+        category:"Accesories"
     },
     {
         name:"Nvidia 3060",
         img: Rack6gpu,
         price:"",
-        category:""
+        category:"Accesorries"
     },
     { 
         name:"Nvidia 3060",
         img: rackMinero12gpu,
         price:"",
-        category:""
+        category:"Accesories"
     }
 ]
 export default function ExportProducts(){
