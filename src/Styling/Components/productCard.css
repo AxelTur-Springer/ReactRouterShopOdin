@@ -1,0 +1,5 @@
+.ImgContainer{
+    height: 15em;
+    width: fit-content;
+    overflow: hidden;
+}

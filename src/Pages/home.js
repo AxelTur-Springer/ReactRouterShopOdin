@@ -1,13 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "../Styling/Pages/home.css"
 import speed from "../Assets/speed.png"
 import security from "../Assets/padlock.png"
 import shipping from "../Assets/shipping.png"
 
 const Home = () => {
-    fetch('https://api.storerestapi.com/products')
-	.then(response => response.json())
-	.then(json => console.log(json))
     return (
         <div className='HomeContainer'>
             <div className='greeting'>
@@ -30,19 +28,30 @@ const Home = () => {
                     <div>
                      <img src={speed} alt="" />
                     </div>
+                    <div>
+                        <p>
+                            Personalized Atencion
+                        </p>
+                    </div>
                 </div>
                 <div>
                     <div>
                         <img src={security} alt="" />
+                    </div>
+                    <div>
+                        <p>Secure Service</p>
                     </div>
                 </div>
                 <div>
                     <div>
                         <img src={shipping} alt="" />
                     </div>
+                    <p>Home Shipping</p>
                 </div>
             </div>
-            
+            <div className='shopButton'>
+               <Link to={"/products"}><button>Shop now !</button></Link> 
+            </div>
         </div>
     );
 }

@@ -36,11 +36,37 @@
     margin: auto;
     margin-top: 5em;
     background-color: rgb(255, 255, 255);
-    color: white;
+    color: rgb(0, 0, 0);
+    text-align: center;
 }
-.Features div {
-    border: solid red;
+.Features > * {
+    border: solid rgb(233, 185, 185);
+    border-radius: 5px;
+    padding: 1em;
 }
+
 .Features img{ 
     width: 10em;
+}
+.shopButton{
+    display: flex;
+    justify-content: center;
+   margin-top: 2em;
+   height: 5em;
+}
+.shopButton button {
+    font-size: 1em;
+    font-weight: 600;
+    padding: 1em 5em;
+    background-color: inherit;
+    border-radius: 5px;
+}
+.shopButton button:hover{
+    cursor: pointer;
+    animation: shopbtnAnim 0.5s  forwards;
+}
+@keyframes shopbtnAnim{
+100%{ transform: scale(1.1);
+    border: solid rgb(233, 185, 185);
+}
 }

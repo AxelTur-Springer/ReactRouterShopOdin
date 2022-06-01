@@ -1,0 +1,18 @@
+.ProductsGrid{
+    display: grid;
+    grid-gap: 5em;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+padding: 0px 3em;
+margin-top: 1em;
+}
+.ProductsGrid img {
+    width: 20em;
+}
+.ProductsGrid img:hover{
+animation: previewImg 1s forwards;
+}
+
+@keyframes previewImg{
+    100%{ transform: scale(1.1);
+    }
+}
