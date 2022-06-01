@@ -18,6 +18,7 @@
     margin: 0px;
 }
 .categorieList{
+    display: none;
 position: absolute;
 right: 6em;
 background-color: white;
