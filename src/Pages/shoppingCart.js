@@ -1,9 +1,11 @@
 import React from 'react';
-
-const ShoppingCart = () => {
+import { ProductsSelected } from '../components/productCard';
+function ShoppingCart(props){
+   let productsBought= ProductsSelected()
     return (
-        <div>
-            
+        <div >
+            <button onClick={props.OnclickShowCart}>sdaf</button>
+        {productsBought}
         </div>
     );
 }

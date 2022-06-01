@@ -1,4 +1,5 @@
 import React from 'react'
+import ShoppingCart from '../Pages/shoppingCart'
 import "../Styling/Components/productCard.css"
 
 export default function ProductCard(props) {
@@ -27,10 +28,18 @@ export default function ProductCard(props) {
         </div>
       </div>
       <div>
-        <button>
+        <button onClick={pushProducts}>
           Add to Cart
         </button>
       </div>
     </div>
   )
+}
+let arrayItems=[];
+function pushProducts(e){
+  let selected = e.target.parentNode.parentNode.id
+  arrayItems.push(selected)
+}
+export function ProductsSelected(){
+  return arrayItems
 }

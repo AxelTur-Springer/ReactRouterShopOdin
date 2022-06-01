@@ -1,17 +1,17 @@
 .productsContainer{
-    width: 22em;
+    width: 15em;
     border: solid rgb(221, 221, 221);
     box-shadow: 0px 0px 10px 1px rgba(240, 128, 128, 0.397);
     border-radius: 8px;
     overflow: hidden;
 }
 .ImgContainer{
-  height: 20em;
+  height: 12em;
   overflow: hidden;
 }
 .ImgContainer img{
     border-radius: 5px 5px 0px 0px;
-    width:22em;
+    width:15em;
 }
 .PriceAndContent{
     padding: 0.5em 1em;

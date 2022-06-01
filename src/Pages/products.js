@@ -3,6 +3,7 @@ import { useState } from 'react';
 import ProductCard from '../components/productCard';
 import ExportProducts from '../Utilities/AllProducts';
 import "../Styling/Pages/products.css"
+import Arrow from "../Assets/down-arrow.png"
 const Products = () => {
     let products = ExportProducts()
     const [FilterParam, setFilterParam] = useState("All");
@@ -17,14 +18,19 @@ const Products = () => {
 
     function displayCategoryMenu(){
         const menu = document.getElementsByClassName("categorieList")
+        const arrow = document.getElementsByClassName("ArrowContainerImg")
         menu[0].style.display ="flex"
+        arrow[0].style.display = "flex"
+
     }
     function HideCategoryMenu(){
         const menu = document.getElementsByClassName("categorieList")
-        menu[0].style.display ="none"
+        const arrow = document.getElementsByClassName("ArrowContainerImg")
+       menu[0].style.display ="none"
+       arrow[0].style.display = "none"
+
     }
     function manageCategory(e){
-
         let value = e.target.innerText
         setFilterParam(value)
     }
@@ -36,7 +42,12 @@ const Products = () => {
                 </div>
                 <div onMouseOver={displayCategoryMenu} onMouseOut={HideCategoryMenu}>
                     <div className='CategoriesDiv'>
-                        <h3>Categorias</h3>
+                        <div>
+                            <h3>Categorias</h3>
+                        </div>
+                        <div className='ArrowContainerImg'>
+                            <img src={Arrow} alt="" />
+                        </div>
                     </div>
                     <div className='categorieList'>
                         <ul onClick={manageCategory}>
