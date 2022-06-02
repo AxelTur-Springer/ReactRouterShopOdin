@@ -17,13 +17,14 @@ function ShoppingCart(props){
         name={product.name} 
         price={product.price}
         img={product.img}
+        quantity={idproductsBought.filter((a)=>{return a=== product.id}).length}
         />
         }).filter((a)=>{
             if(idproductsBought.includes(a.key)){
                 return a.key 
             }
         }) 
-        
+        console.log(idproductsBought,test)
     return (
         
         <div className='ShoppingCartContainer'>

@@ -1,7 +1,14 @@
 import React from 'react';
+import { useState } from 'react';
 import "../Styling/Components/boughtProduct.css"
 
 const BoughtProduct = (props) => {
+    const [Quantity, setQuantity] = useState(props.quantity);
+
+    function test(){
+        return Quantity !== 1 ? setQuantity(Quantity-1):setQuantity(1)
+       
+    }
     return (
         <div className='BoughtProdContainer'>
             <div className='imgAndNameCont'>
@@ -16,13 +23,13 @@ const BoughtProduct = (props) => {
                 {props.price}
             </div>
             <div>
-                {props.quantity}
+                {Quantity}
             </div>
             <div>
-                {props.subtotal}
+                {props.price * Quantity }
             </div>
             <div>
-                <button>erase</button>
+                <button onClick={test}>erase</button>
             </div>
         </div>
     );
