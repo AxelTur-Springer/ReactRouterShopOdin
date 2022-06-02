@@ -15,6 +15,7 @@
     justify-content: space-around;
     width: 14em;
     height: 5em;
+    
 }
 .cartAndcart div{
     display: flex;
@@ -46,14 +47,30 @@ text-align: center;
 .priceQuantitySubContainer{
     display: flex;
     justify-content: space-between;
-    border: solid red;
+    width: 75%;
 }
 .priceQuantitySubContainer div{
     display: flex;
 }
 .priceQuantitySub{
     display: flex;
-    justify-content: space-around;
-    border: solid black;
-    width: 50%;
+    width: 60%;
+
+}
+.priceQuantitySub div {
+    width: 22%;
+}
+.Productp{
+    width: 20%;
+}
+.ProdcutsInCartAndTotal{
+    display: flex;
+    justify-content: space-between;
+}
+.ProductsInCart{
+    width: 75%;
+}
+.ResumOfTotal{
+    width: 25%;
+    border: seagreen solid;
 }

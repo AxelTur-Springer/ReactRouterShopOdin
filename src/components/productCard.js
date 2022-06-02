@@ -20,7 +20,7 @@ export default function ProductCard(props) {
       <div className='PriceAndContent'>
         <div className='Price'>
           <p>
-            ${props.Price}
+            $ {props.Price} 
           </p>
         </div>
         <div className='nameAndDescrip'>

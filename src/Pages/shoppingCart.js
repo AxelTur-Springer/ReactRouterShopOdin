@@ -8,11 +8,16 @@ import BoughtProduct from '../components/boughtProduct';
 import AllProducts from "../Utilities/AllProducts"
 
 function ShoppingCart(props){
-    const [idproductsBought, setidproductsBought] = useState(ProductsSelected());
     const Products = AllProducts();
- 
+    const idproductsBought = ProductsSelected()
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        ProductsAddedCart()
+    },[count]);
+
+
   function ProductsAddedCart(){
-      console.log(ProductsSelected())
       return (
       Products.map((product)=>{
         return <BoughtProduct 
@@ -34,20 +39,16 @@ function ShoppingCart(props){
 
         function test(e){
             let target = e.target.parentNode.parentNode.id
-            let spliced = idproductsBought.splice(idproductsBought.indexOf(target),1)
-            setidproductsBought( 
-              spliced 
-            )
-            console.log(idproductsBought)
-            //ProductsAddedCart()
+            idproductsBought.splice(idproductsBought.indexOf(target),1)  
+            setCount(count+1)
+            EraseProduct()
         }
         
         function EraseProduct(e){
-            console.log(e.target.parentNode.parentNode)
             e.target.parentNode.parentNode.remove()
         }
-    return (
-        
+
+        return (        
         <div className='ShoppingCartContainer'>
             <div className='Header'>
                 <div className='cartAndcart'>
@@ -73,19 +74,55 @@ function ShoppingCart(props){
                     <p>Order details:</p>
                 </div>
                 <div className='priceQuantitySubContainer'>
-                    <div>
+                    <div className='Productp'>
                         <p>Product</p>
                     </div>
                     <div className='priceQuantitySub'>
-                        <p>Price</p>
-                        <p>Quantity</p>
-                        <p>SubTotal</p>
+                        <div> <p>Price</p> </div>
+                        <div> <p>Quantity </p></div>
+                        <div> <p>SubTotal</p> </div>
                     </div>
                 </div>
             </div>
-          {ProductsAddedCart()}
+            <div className='ProdcutsInCartAndTotal'>
+                <div className='ProductsInCart'>
+                    {ProductsAddedCart()}
+                </div>
+                <div className='ResumOfTotal'>
+                    <div>
+                        <p>Resume of your order</p>
+                    </div>
+                    <div>
+                        Total:$ {totalPrice()}
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
 
 export default ShoppingCart;
+
+function totalPrice(){
+    const Products = AllProducts();
+    const idproductsBought = ProductsSelected()
+    let algo = 
+        Products.map((product)=>{
+          return <BoughtProduct 
+          key = {product.id} 
+          id ={product.id}
+          price={product.price}
+          quantity={idproductsBought.filter((a)=>{return a=== product.id}).length}
+          />
+          }).filter((a)=>{
+              if(idproductsBought.includes(a.key)){
+                  return a.key 
+              }
+          }) 
+          let Total = 0;
+          for (let i = 0; i < algo.length; i++) {
+              Total += (algo[i].props.quantity * algo[i].props.price )
+          }
+
+return Total
+}

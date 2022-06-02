@@ -1,21 +1,47 @@
 .BoughtProdContainer{
-    border: solid red;
     display: flex;
     justify-content: space-between;
+    border-bottom: rgb(0, 0, 0) solid;
+    margin-top: 1em;
 }
 .imgAndNameCont{
     display: flex;
+    width: 40%;
 }
 .BoughtProdName{
     width: 20em;
     padding: 2em;
-    border: salmon solid;
 }
-
+.priceQuanSubEraseCont{
+    display: flex;
+    width: 60%;
+}
+.priceQuanSubEraseCont div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .imgproductCont img{
-    width: 8em;
+    height: 6em;
 }
 .BoughtProdContainer .price{
-    width: 10em;
-    border: solid red;
+    width: 25%;
+}
+.BoughtProdContainer .quantity{
+    width: 25%;
+}
+.BoughtProdContainer .SubTotals{
+    width: 25%;
+}
+.BoughtProdContainer button{
+    border: none;
+    background-color: red;
+    padding: 0.3em 1em;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+}
+.BoughtProdContainer button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
