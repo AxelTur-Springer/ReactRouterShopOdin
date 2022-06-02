@@ -3,14 +3,9 @@ import { useState } from 'react';
 import "../Styling/Components/boughtProduct.css"
 
 const BoughtProduct = (props) => {
-    const [Quantity, setQuantity] = useState(props.quantity);
-
-    function test(){
-        return Quantity !== 1 ? setQuantity(Quantity-1):setQuantity(1)
-       
-    }
+   // const [Quantity, setQuantity] = useState();
     return (
-        <div className='BoughtProdContainer'>
+        <div className='BoughtProdContainer' id={props.id}>
             <div className='imgAndNameCont'>
                 <div className='imgproductCont'>
                     <img src={props.img} alt="" />
@@ -23,13 +18,13 @@ const BoughtProduct = (props) => {
                 {props.price}
             </div>
             <div>
-                {Quantity}
+                {props.quantity}
             </div>
             <div>
-                {props.price * Quantity }
+                {props.price * props.quantity }
             </div>
             <div>
-                <button onClick={test}>erase</button>
+                <button onClick={props.test} >erase</button>
             </div>
         </div>
     );

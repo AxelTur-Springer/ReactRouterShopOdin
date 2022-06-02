@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState,useEffect } from 'react';
 import "../Styling/Pages/Shoppingcart.css"
 import { ProductsSelected } from '../components/productCard';
 import Cart from "../Assets/shopping-cart.png"
@@ -7,24 +8,44 @@ import BoughtProduct from '../components/boughtProduct';
 import AllProducts from "../Utilities/AllProducts"
 
 function ShoppingCart(props){
-   let idproductsBought= ProductsSelected();
-   const Products = AllProducts();
-   let boughtProducts; 
-   
-   let test = Products.map((product)=>{
+    const [idproductsBought, setidproductsBought] = useState(ProductsSelected());
+    const Products = AllProducts();
+ 
+  function ProductsAddedCart(){
+      console.log(ProductsSelected())
+      return (
+      Products.map((product)=>{
         return <BoughtProduct 
         key = {product.id} 
+        id ={product.id}
         name={product.name} 
         price={product.price}
         img={product.img}
         quantity={idproductsBought.filter((a)=>{return a=== product.id}).length}
+        test = {test}
         />
         }).filter((a)=>{
             if(idproductsBought.includes(a.key)){
                 return a.key 
             }
         }) 
-        console.log(idproductsBought,test)
+      )
+    }
+
+        function test(e){
+            let target = e.target.parentNode.parentNode.id
+            let spliced = idproductsBought.splice(idproductsBought.indexOf(target),1)
+            setidproductsBought( 
+              spliced 
+            )
+            console.log(idproductsBought)
+            //ProductsAddedCart()
+        }
+        
+        function EraseProduct(e){
+            console.log(e.target.parentNode.parentNode)
+            e.target.parentNode.parentNode.remove()
+        }
     return (
         
         <div className='ShoppingCartContainer'>
@@ -62,7 +83,7 @@ function ShoppingCart(props){
                     </div>
                 </div>
             </div>
-          {test}
+          {ProductsAddedCart()}
         </div>
     );
 }
