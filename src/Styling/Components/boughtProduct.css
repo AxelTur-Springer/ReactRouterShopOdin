@@ -1,0 +1,21 @@
+.BoughtProdContainer{
+    border: solid red;
+    display: flex;
+    justify-content: space-between;
+}
+.imgAndNameCont{
+    display: flex;
+}
+.BoughtProdName{
+    width: 20em;
+    padding: 2em;
+    border: salmon solid;
+}
+
+.imgproductCont img{
+    width: 8em;
+}
+.BoughtProdContainer .price{
+    width: 10em;
+    border: solid red;
+}

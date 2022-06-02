@@ -1,0 +1,59 @@
+.ShoppingCartContainer{
+    width: 80%;
+    margin: auto;
+    margin-top: 1em;
+}
+.ShoppingCartContainer .Header {
+    display: flex;
+    justify-content: space-between;
+    height: 5em;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.cartAndcart{
+    display: flex;
+    justify-content: space-around;
+    width: 14em;
+    height: 5em;
+}
+.cartAndcart div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cartAndcart img {
+    width: 2em;
+}
+.SafeBuy{
+    display: flex;
+    justify-content: space-around;
+width: 14em;
+margin: 0px;
+padding: 0px;
+text-align: center;
+}
+.SafeBuy div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.SafeBuy p{
+    margin: 0px;
+}
+.SafeBuy img{
+    width: 2em;
+}
+.priceQuantitySubContainer{
+    display: flex;
+    justify-content: space-between;
+    border: solid red;
+}
+.priceQuantitySubContainer div{
+    display: flex;
+}
+.priceQuantitySub{
+    display: flex;
+    justify-content: space-around;
+    border: solid black;
+    width: 50%;
+}

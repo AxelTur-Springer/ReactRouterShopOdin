@@ -9,10 +9,7 @@ import ShoppingCart from './Pages/shoppingCart';
 import './App.css';
 
 function App() {
-  
-  function showCart(e){
-    console.log(e)
-  }
+
   return (
     <div className='App'>
     <BrowserRouter >
@@ -20,8 +17,9 @@ function App() {
       <Routes>
             <Route path='/' element = {<Home />}/>
             <Route path='/contact'  element = {<Contact/>}/>
-            <Route path='/products'  element = {<Products/>}/>
             <Route path='/shoppingCart'  element = {<ShoppingCart/>}/>
+
+            <Route path='/products'  element = {<Products/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter >

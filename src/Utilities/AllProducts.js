@@ -65,74 +65,86 @@ const Products = [
         name:"ASUS ROG STRIX B660-A GAMING WIFI D4 S1700",
         img: Asusb660,
         price:"23500",
-        category:"Mother Board"
+        category:"Mother Board",
+        id:"Asusb660"
     },
     {
         name:"ASUS X570-PLUS WIFI TUF GAMING BOX ATX AM4",
         img: Asusx570,
         price:"45000",
-        category:"Mother Board"
+        category:"Mother Board",
+        id:"Asusx570"
     },
     {
         name:"GIGABYTE B560 AORUS PRO AX S1200",
         img: AsusB560,
         price:"33540",
-        category:"Mother Board"
+        category:"Mother Board",
+        id:"GigaB560"
     },
     {
         name:"MSI PRO Z690-A DDR4 S1700 12VA GEN WIFI",
         img: MSIZ690,
         price:"20865",
-        category:"Mother Board"
+        category:"Mother Board",
+        id:"MsiZ690"
     },
     {
         name:"PROCESADOR INTEL CORE I3 10100F 4.3GHZ S1200",
         img: i3,
         price:"13500",
-        category:"Cpu"
+        category:"Cpu",
+        id:"i3"
     },
     {
         name:"PROCESADOR INTEL CORE I5 10400 COMETLAKE",
         img: i5,
         price:"25000",
-        category:"Cpu"
+        category:"Cpu",
+        id:"i5"
     },
     {
         name:"PROCESADOR AMD RYZEN 5600G 4.4 GHZ AM4",
         img: Ryzen5600g,
         price:"32000",
-        category:"Cpu"
+        category:"Cpu",
+        id:"5600g"
     },
   
     {
-        name:"Nvidia 3060",
+        name:"Pulsador Inicio",
         img: Pulsador,
         price:"",
-        category:"Accesories"
+        category:"Accesories",
+        id:"Pulsador"
     },
     {
-        name:"Nvidia 3060",
+        name:"Splitter 2 psu",
         img: add2psu,
         price:"",
-        category:"Accesories"
+        category:"Accesories",
+        id:"add2psu"
     },
     {
-        name:"Nvidia 3060",
+        name:"Adaptador m2 a PciE",
         img: m2apcie,
         price:"",
-        category:"Accesories"
+        category:"Accesories",
+        id:"m2Pcie"
     },
     {
-        name:"Nvidia 3060",
+        name:"Rack 6 gpu",
         img: Rack6gpu,
         price:"",
-        category:"Accesorries"
+        category:"Accesorries",
+        id:"Rack6"
     },
     { 
-        name:"Nvidia 3060",
+        name:"Rack 12 gpu",
         img: rackMinero12gpu,
         price:"",
-        category:"Accesories"
+        category:"Accesories",
+        id:"Rack12"
     }
 ]
 export default function ExportProducts(){
