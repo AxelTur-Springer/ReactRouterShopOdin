@@ -59,6 +59,7 @@
     font-weight: 600;
     padding: 1em 5em;
     background-color: inherit;
+    border: solid black;
     border-radius: 5px;
 }
 .shopButton button:hover{
