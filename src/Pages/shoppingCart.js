@@ -38,16 +38,12 @@ function ShoppingCart(props){
     }
 
         function test(e){
-            let target = e.target.parentNode.parentNode.id
+            let target = e.target.parentNode.parentNode.parentNode.id
             idproductsBought.splice(idproductsBought.indexOf(target),1)  
             setCount(count+1)
-            EraseProduct()
         }
         
-        function EraseProduct(e){
-            e.target.parentNode.parentNode.remove()
-        }
-
+    
         return (        
         <div className='ShoppingCartContainer'>
             <div className='Header'>
@@ -94,6 +90,9 @@ function ShoppingCart(props){
                     </div>
                     <div>
                         Total:$ {totalPrice()}
+                    </div>
+                    <div>
+                        <button>Confirm Order</button>
                     </div>
                 </div>
             </div>
