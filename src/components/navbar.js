@@ -5,13 +5,14 @@ import Products from '../Styling/Components/navbar.css';
 import { ProductsSelected } from '../components/productCard';
 
 const Navbar = () => {
-    const [Amout,setAmout] = useState(ProductsSelected().length)
+    const [Amout,setAmout] = useState(0)
     
-    useEffect(() => {    
-        setTimeout(() => {
+    useEffect(() => {   
+        setInterval(() => {
             setAmout(ProductsSelected().length)
-        }, 1000);
-    });
+        }, 500);
+    },[Amout]);
+
 
     return (
         <div className='NavBarContainer'>
@@ -28,9 +29,9 @@ const Navbar = () => {
                 <button><Link className='test' to={"/"}>Home </Link></button>
                 <button><Link to={"/products"}>Products </Link></button>
                 <button><Link to={"/contact"}>Contact </Link></button>
-                <div>
+                 <div className='navBarCartAndAmountCont'>
                  <div><button><Link to={"/shoppingCart"}>Cart </Link></button></div>
-                 <div>{Amout} </div>
+                 <div><p>{Amout} </p></div>
                 </div>
             </div>
            

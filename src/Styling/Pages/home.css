@@ -33,8 +33,7 @@
     display: flex;
     justify-content: space-around;
     width: 50%;
-    margin: auto;
-    margin-top: 5em;
+    margin: 9em auto;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     text-align: center;
@@ -52,6 +51,7 @@
     display: flex;
     justify-content: center;
    margin-top: 2em;
+   margin-bottom: 5em;
    height: 5em;
 }
 .shopButton button {

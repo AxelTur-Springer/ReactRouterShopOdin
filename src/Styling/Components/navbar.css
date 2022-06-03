@@ -27,3 +27,25 @@
     text-decoration: none;
     color: white;
 }
+.navBarCartAndAmountCont{
+    display: flex;
+    
+}
+.navBarCartAndAmountCont p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 0px;
+    background-color:rgb(255, 118, 118);
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+}
+.navBarCartAndAmountCont div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}

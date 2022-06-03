@@ -1,11 +1,12 @@
 import React from 'react'
+import "../Styling/Components/footer.css"
 
 export default function Footer() {
   return (
-    <div>
+    <div className='FooterContainer'>
         <div>
             <p>
-                Created by axel tur springer for react router odin proyect 
+                Created by Axel Tur Springer for react router odin proyect 
             </p>
         </div>
     </div>

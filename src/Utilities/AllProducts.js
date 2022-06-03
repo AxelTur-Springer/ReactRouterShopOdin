@@ -15,11 +15,12 @@ import  MSIZ690 from "../Assets/Products/MotherBoards/MOTHERBOARD MSI PRO Z690-A
 import i3 from "../Assets/Products/Cpu/-PROCESADOR INTEL CORE I3 10100F 4.3GHZ S1200.jpg"
 import i5 from "../Assets/Products/Cpu/PROCESADOR INTEL CORE I5 10400 COMETLAKE.png"
 import Ryzen5600g from "../Assets/Products/Cpu/MICROPROCESADOR AMD RYZEN 5600G 4.4 GHZ AM4.jpg"
-import Pulsador from "../Assets/Products/Accesories/Boton Pulsador Interno Power Reset Computación Atx Pc.webp"
+import Pulsador from "../Assets/Products/Accesories/Boton Pulsador Interno Power Reset Computación Atx Pc.png"
 import add2psu from "../Assets/Products/Accesories/Mineria - Cable Adaptador 2 Fuentes (no Add2psu) 24pin Psu.webp"
 import m2apcie from "../Assets/Products/Accesories/ADAPTADOR NGFF M.2 A PCI-E USB 3.0 MINERIA.png"
 import Rack6gpu from "../Assets/Products/Accesories/Rack6gpu.webp"
 import rackMinero12gpu from "../Assets/Products/Accesories/rackMinero12gpu.webp"
+import riser from "../Assets/Products/Accesories/Riser.jpg"
 
 const Products = [
     {
@@ -114,39 +115,47 @@ const Products = [
     {
         name:"Pulsador Inicio",
         img: Pulsador,
-        price:"",
+        price:"300",
         category:"Accesories",
         id:"Pulsador"
     },
     {
         name:"Splitter 2 psu",
         img: add2psu,
-        price:"",
+        price:"650",
         category:"Accesories",
         id:"add2psu"
     },
     {
         name:"Adaptador m2 a PciE",
         img: m2apcie,
-        price:"",
+        price:"1080",
         category:"Accesories",
         id:"m2Pcie"
     },
     {
         name:"Rack 6 gpu",
         img: Rack6gpu,
-        price:"",
+        price:"5000",
         category:"Accesorries",
         id:"Rack6"
     },
     { 
         name:"Rack 12 gpu",
         img: rackMinero12gpu,
-        price:"",
+        price:"8500",
         category:"Accesories",
         id:"Rack12"
+    },
+    { 
+        name:"Riser",
+        img: riser,
+        price:"1500",
+        category:"Accesories",
+        id:"Riser"
     }
 ]
+
 export default function ExportProducts(){
     return Products
 }

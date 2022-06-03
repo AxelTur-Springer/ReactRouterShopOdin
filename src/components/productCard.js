@@ -27,8 +27,8 @@ export default function ProductCard(props) {
           -{props.Category} {props.Name}
         </div>
       </div>
-      <div>
-        <button onClick={pushProducts}>
+      <div className="AddToCartBtnContainer">
+        <button onClick={pushProducts} >
           Add to Cart
         </button>
       </div>
