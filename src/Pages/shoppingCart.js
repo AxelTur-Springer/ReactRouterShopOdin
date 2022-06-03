@@ -125,3 +125,6 @@ function totalPrice(){
 
 return Total
 }
+export function  totalProductsBoought(){
+return BoughtProduct().length
+}
