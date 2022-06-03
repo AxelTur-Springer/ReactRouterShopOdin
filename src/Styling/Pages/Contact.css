@@ -21,7 +21,7 @@ margin: auto;
     font-size: 30px;
    
   }
-    li {
+  .ContactContainer  li {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -35,11 +35,11 @@ margin: auto;
       transition: ease .3s;
     }
 
-  .social:hover > li {
+    .ContactContainer .social:hover > li {
     opacity: 0.5;
   }
   
-  .social:hover > li:hover {
+  .ContactContainer .social:hover > li:hover {
     opacity: 1;
   }
   .ContactContainer a:hover{
