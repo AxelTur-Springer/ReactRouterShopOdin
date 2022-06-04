@@ -83,3 +83,30 @@
         width: 20%;margin-right: 5px;
     }
     }
+    @media only screen and (max-width: 460px) {
+        .BoughtProdContainer{
+          font-size: 0.8em;
+        }
+        .imgproductCont img{
+            height: 4em;
+        }
+        .BoughtProdName{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+        }
+    
+        .priceQuanSubEraseCont{
+        justify-content: space-between;
+        }
+        .BoughtProdContainer .price{
+            width: 19%;
+        }
+        .BoughtProdContainer .quantity{
+            text-align: center;
+            width: 19%;
+        }
+        .BoughtProdContainer .SubTotals{
+            width: 19%;margin-right: 10px;
+        }
+        }
