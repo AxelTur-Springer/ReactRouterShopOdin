@@ -44,16 +44,16 @@
 }
 @media only screen and (max-width: 640px) {
     .productsContainer{
-        width: 15em;
+        width: 14em;
+        height: 22em;
        font-size: 0.8em;
+       margin: auto;
     }
 
-    .ImgContainer{
-        height: 12em;
-      }
+
       .ImgContainer img{
           border-radius: 5px 5px 0px 0px;
-          width:15em;
+          width:14em;
       }
       .PriceAndContent{
         padding: 0.2em 0.5em;
