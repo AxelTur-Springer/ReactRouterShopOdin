@@ -62,12 +62,18 @@
 @media only screen and (max-width: 640px) {
     .NavBarContainer{
         height: 5.5em;
-    font-size: 0.6em;
+        font-size: 0.6em;
+    }
+    .NavBarContainer .logo img {
+        width: 3em;   
     }
 }
 @media only screen and (max-width: 450px) {
     .NavBarContainer{
     font-size: 0.5em;
+    }
+    .NavBarContainer .logo img {
+        width: 3.2em;   
     }
 
 }
