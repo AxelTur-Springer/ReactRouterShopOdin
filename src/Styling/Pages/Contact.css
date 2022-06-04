@@ -45,3 +45,25 @@ margin: auto;
   .ContactContainer a:hover{
     color: lightpink;
      }
+
+     @media only screen and (max-width: 500px) {
+
+        .ContactContainer p{
+          font-size: 4em;
+  
+        }
+        .ContactContainer .me{
+            border-bottom: solid pink;
+          }
+        
+          #social-test {
+            text-align: center;
+            font-size: 25px;
+
+          }
+          .ContactContainer  li {
+              width: 80px;
+              height: 80px;
+            }
+
+      }
