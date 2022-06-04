@@ -13,6 +13,16 @@
     font-size: 2em;
    
 }
+.NavBarContainer .logo div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.NavBarContainer .logo img {
+    width: 2em;   
+    margin-right: 1em;
+}
 .NavBarContainer .sections{
     display: flex;
     justify-content: space-around;
@@ -48,4 +58,15 @@
     flex-direction: column;
     justify-content: center;
     
+}
+@media only screen and (max-width: 640px) {
+    .NavBarContainer{
+    font-size: 0.6em;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .NavBarContainer{
+    font-size: 0.5em;
+    }
+
 }

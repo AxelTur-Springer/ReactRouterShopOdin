@@ -42,3 +42,24 @@
 @keyframes hoverAdd2Cart {
     100%{transform: scale(1.1);}
 }
+@media only screen and (max-width: 640px) {
+    .productsContainer{
+        width: 13em;
+       font-size: 0.8em;
+    }
+
+    .ImgContainer{
+        height: 10em;
+      }
+      .ImgContainer img{
+          border-radius: 5px 5px 0px 0px;
+          width:13em;
+      }
+      .PriceAndContent{
+        padding: 0.2em 0.5em;
+    }
+    .Price{
+        font-size: 1em;
+        font-weight: bold;
+    }
+}

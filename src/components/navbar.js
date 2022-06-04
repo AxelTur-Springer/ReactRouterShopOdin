@@ -3,7 +3,7 @@ import { useState,useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Products from '../Styling/Components/navbar.css';
 import { ProductsSelected } from '../components/productCard';
-
+import Logo from "../Assets/gpu-mining.png"
 const Navbar = () => {
     const [Amout,setAmout] = useState(0)
     
@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className='NavBarContainer'>
             <div className='logo'>
                 <div>
-                    <img src="" alt="" />
+                    <img src={Logo} alt="" />
                 </div>
                 <div>
                     <p> Mining Store </p>

@@ -37,8 +37,8 @@ const Products = () => {
     return (
         <div>
             <div className='CategoriaContainer'>
-                <div>
-                    <h2>All Products</h2>
+                <div className='ProductDescripcionShowing'>
+                    <h2>{FilterParam}</h2>
                 </div>
                 <div onMouseOver={displayCategoryMenu} onMouseOut={HideCategoryMenu}>
                     <div className='CategoriesDiv'>
