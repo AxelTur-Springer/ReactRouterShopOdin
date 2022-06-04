@@ -59,6 +59,9 @@ border: black solid;
      cursor: pointer;
      color: pink;
  }
+ .GridContainer{
+     width: 100%;
+ }
  .ProductsGrid{
     display: grid;
     grid-gap: 5em;

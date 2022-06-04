@@ -70,16 +70,19 @@ const Products = () => {
                     </div>
                 </div>
             </div>
-            <div className = "ProductsGrid">
-                {filtered.map((product)=>{
-                    return <ProductCard Name = {product.name} 
-                    Img = {product.img} 
-                    Id = {product.id} 
-                    ImgPrev = {product.imgPrev}
-                    Price = {product.price}
-                    Category = {product.category}/>
-                })}
+            <div className='GridContainer'>
+                <div className = "ProductsGrid">
+                    {filtered.map((product)=>{
+                        return <ProductCard Name = {product.name} 
+                        Img = {product.img} 
+                        Id = {product.id} 
+                        ImgPrev = {product.imgPrev}
+                        Price = {product.price}
+                        Category = {product.category}/>
+                    })}
+                </div>
             </div>
+       
         </div>
     );
 }
