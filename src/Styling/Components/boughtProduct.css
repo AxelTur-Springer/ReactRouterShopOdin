@@ -21,7 +21,13 @@
     flex-direction: column;
     justify-content: center;
 }
+.imgproductCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .imgproductCont img{
+    border-radius: 5px;
     height: 6em;
 }
 .BoughtProdContainer .price{
@@ -45,3 +51,35 @@
     cursor: pointer;
     transform: scale(1.05);
 }
+@media only screen and (max-width: 946px) {
+    .BoughtProdName{
+    
+        padding: 2em 0em;
+    }
+
+}
+@media only screen and (max-width: 640px) {
+    .imgproductCont img{
+        height: 4em;
+    }
+    .BoughtProdName{
+        width:20em;
+        padding: 0em;
+    }
+    .imgAndNameCont{
+        width: 40%;
+    }
+    .priceQuanSubEraseCont{
+    justify-content: space-between;
+    }
+    .BoughtProdContainer .price{
+        width: 20%;
+    }
+    .BoughtProdContainer .quantity{
+        text-align: center;
+        width: 20%;
+    }
+    .BoughtProdContainer .SubTotals{
+        width: 20%;margin-right: 5px;
+    }
+    }

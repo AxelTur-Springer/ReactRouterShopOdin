@@ -65,36 +65,42 @@ function ShoppingCart(props){
                     </div>
                 </div>
             </div>
-            <div className='ShoppingCartDetails'>
-                <div> 
-                    <p>Order details:</p>
-                </div>
-                <div className='priceQuantitySubContainer'>
-                    <div className='Productp'>
-                        <p>Product</p>
-                    </div>
-                    <div className='priceQuantitySub'>
-                        <div> <p>Price</p> </div>
-                        <div> <p>Quantity </p></div>
-                        <div> <p>SubTotal</p> </div>
+            
+
+                
+                <div className='ShoppingCartDetails'>
+                    <div> 
+                        <p>Order details:</p>
                     </div>
                 </div>
-            </div>
-            <div className='ProdcutsInCartAndTotal'>
-                <div className='ProductsInCart'>
-                    {ProductsAddedCart()}
+                <div className='CartAndResume'>
+                <div className='ProdcutsInCartAndTotal'> 
+                    <div className='priceQuantitySubContainer'>
+                        <div className='Productp'>
+                            <p>Product</p>
+                        </div>
+                        <div className='priceQuantitySub'>
+                            <div> <p>Price</p> </div>
+                            <div> <p>Quantity </p></div>
+                            <div> <p>SubTotal</p> </div>
+                        </div>
+                    </div>
+                    <div className='ProductsInCart'>
+                        {ProductsAddedCart()}
+                    </div>
                 </div>
+
                 <div className='ResumOfTotal'>
-                    <div>
-                        <p>Resume of your order</p>
+                        <div>
+                            <p>Resume of your order</p>
+                        </div>
+                        <div>
+                            Total:$ {totalPrice()}
+                        </div>
+                        <div>
+                            <button>Confirm Order</button>
+                        </div>
                     </div>
-                    <div>
-                        Total:$ {totalPrice()}
-                    </div>
-                    <div>
-                        <button>Confirm Order</button>
-                    </div>
-                </div>
             </div>
         </div>
     );
