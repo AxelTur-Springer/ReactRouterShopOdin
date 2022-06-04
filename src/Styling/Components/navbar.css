@@ -61,6 +61,7 @@
 }
 @media only screen and (max-width: 640px) {
     .NavBarContainer{
+        height: 5.5em;
     font-size: 0.6em;
     }
 }
