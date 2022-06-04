@@ -11,7 +11,7 @@ function ShoppingCart(props){
     const Products = AllProducts();
     const idproductsBought = ProductsSelected()
     const [count, setCount] = useState(0);
-    const [Shipping, setShipping] = useState(45.52);
+    const [Shipping, setShipping] = useState(0);
 
 
     useEffect(() => {
@@ -45,7 +45,7 @@ function ShoppingCart(props){
             setCount(count+1)
         }
         
-    
+   
         return (        
         <div className='ShoppingCartContainer'>
             <div className='Header'>

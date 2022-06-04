@@ -74,6 +74,7 @@ const Products = () => {
                 <div className = "ProductsGrid">
                     {filtered.map((product)=>{
                         return <ProductCard Name = {product.name} 
+                        key = {product.id}
                         Img = {product.img} 
                         Id = {product.id} 
                         ImgPrev = {product.imgPrev}
