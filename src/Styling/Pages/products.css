@@ -10,7 +10,7 @@
     border: solid rgb(168, 168, 168);
     border-radius: 5px;
     padding: 0em 2em;
-    margin: 1em 0em 0em;
+    margin: 0.5em 0em 0em;
     width: 12em;
 
 }
@@ -29,7 +29,7 @@
     width: 2em;
 }
 .categorieList{
-    display: none;
+    display: flex;
 position: absolute;
 right: 0.2em;
 background-color: white;
@@ -79,6 +79,15 @@ animation: previewImg 1s forwards;
     100%{ transform: scale(1.1);
     }
 }
+/*@media only screen and (max-width: 2560px) {
+   .categorieList{
+
+    width: 20%;
+  
+}
+}*/
+
+
 @media only screen and (max-width: 640px) {
     .CategoriaContainer{
         justify-content: space-between;
@@ -88,6 +97,7 @@ animation: previewImg 1s forwards;
         padding: 0em;
     
     }
+  
     .ArrowContainerImg{
         display: flex;
         flex-direction: column;

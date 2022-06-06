@@ -27,12 +27,7 @@ const Products = () => {
                 arrow[0].style.display = "flex"
             }
     }
-    function displayOnmouseOver(){
-        const menu = document.getElementsByClassName("categorieList")
-        const arrow = document.getElementsByClassName("ArrowContainerImg")
-       menu[0].style.display ="flex"
-       arrow[0].style.display = "flex"
-    }
+
     function HideCategoryMenu(e){
         const menu = document.getElementsByClassName("categorieList")
         const arrow = document.getElementsByClassName("ArrowContainerImg")
@@ -59,8 +54,7 @@ const Products = () => {
                 </div>
                 <div
                 className="CatParent">
-                    <div className='CategoriesDiv' onClick={displayCategoryMenu}
-                    onMouseOver ={displayOnmouseOver}>
+                    <div className='CategoriesDiv' onClick={displayCategoryMenu}>
                         <div>
                             <h3>Categorias</h3>
                         </div>
