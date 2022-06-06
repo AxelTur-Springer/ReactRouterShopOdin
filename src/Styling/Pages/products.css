@@ -82,7 +82,7 @@ animation: previewImg 1s forwards;
 @media only screen and (max-width: 640px) {
     .CategoriaContainer{
         justify-content: space-between;
-        width: 100%;
+        width: 95%;
     }
     .CategoriesDiv{
         padding: 0em;
