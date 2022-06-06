@@ -115,6 +115,9 @@
     }
   }
   @media only screen and (max-width: 450px) {
+    .Features{
+        width: 95%;
+    }
     .Features div {
         width: 5em;
     }

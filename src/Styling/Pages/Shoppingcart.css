@@ -115,15 +115,25 @@ border-radius: 5px;
 
 @media only screen and (max-width: 946px) {
     .ShoppingCartContainer{
-        width: 100%;
+        width: 95%;
+        margin: 0px auto;
     }
 }
 @media only screen and (max-width: 640px) {
     .priceQuantitySubContainer{
         font-size: 0.9em;
     }
-    .ShoppingCartContainer{
-        width: 100%;
+    .cartAndcart{
+        width: 12em;
+    }
+
+    .cartAndcart img {
+        width: 1.5em;
+    }
+
+
+    .SafeBuy img{
+        width: 1.5em;
     }
     
     .CartAndResume{
