@@ -16,14 +16,24 @@ const Products = () => {
         }
     })
 
-    function displayCategoryMenu(){
+    function displayCategoryMenu(e){
+            const menu = document.getElementsByClassName("categorieList")
+            const arrow = document.getElementsByClassName("ArrowContainerImg")
+            if(menu[0].style.display ==="flex"){
+                menu[0].style.display ="none"
+                arrow[0].style.display = "none"
+            }else{
+                menu[0].style.display ="flex"
+                arrow[0].style.display = "flex"
+            }
+    }
+    function displayOnmouseOver(){
         const menu = document.getElementsByClassName("categorieList")
         const arrow = document.getElementsByClassName("ArrowContainerImg")
-        menu[0].style.display ="flex"
-        arrow[0].style.display = "flex"
-
+       menu[0].style.display ="flex"
+       arrow[0].style.display = "flex"
     }
-    function HideCategoryMenu(){
+    function HideCategoryMenu(e){
         const menu = document.getElementsByClassName("categorieList")
         const arrow = document.getElementsByClassName("ArrowContainerImg")
        menu[0].style.display ="none"
@@ -32,12 +42,14 @@ const Products = () => {
     }
     function manageCategory(e){
         let value = e.target.innerText
+        HideCategoryMenu()
+        setFilterParam(value)
+    }
+    function Onleave(){
         const menu = document.getElementsByClassName("categorieList")
         const arrow = document.getElementsByClassName("ArrowContainerImg")
        menu[0].style.display ="none"
        arrow[0].style.display = "none"
-
-        setFilterParam(value)
     }
     return (
         <div>
@@ -45,10 +57,10 @@ const Products = () => {
                 <div className='ProductDescripcionShowing'>
                     <h2>{FilterParam}</h2>
                 </div>
-                <div onMouseOver={displayCategoryMenu} 
-                onClick={displayCategoryMenu}
-                onMouseOut={HideCategoryMenu}>
-                    <div className='CategoriesDiv'>
+                <div
+                className="CatParent">
+                    <div className='CategoriesDiv' onClick={displayCategoryMenu}
+                    onMouseOver ={displayOnmouseOver}>
                         <div>
                             <h3>Categorias</h3>
                         </div>
@@ -57,7 +69,8 @@ const Products = () => {
                         </div>
                     </div>
                     <div className='categorieList'>
-                        <ul onClick={manageCategory}>
+                        <ul onClick={manageCategory}
+                        onMouseLeave ={Onleave}>
                             <li>
                                 <button>All</button>
                             </li>

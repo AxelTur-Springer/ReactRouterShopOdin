@@ -10,7 +10,7 @@
     border: solid rgb(168, 168, 168);
     border-radius: 5px;
     padding: 0em 2em;
-    margin: 1em 0em;
+    margin: 1em 0em 0em;
     width: 12em;
 
 }
@@ -31,9 +31,9 @@
 .categorieList{
     display: none;
 position: absolute;
-right: 0em;
+right: 0.2em;
 background-color: white;
-width: 25.5em;
+width: 27.8em;
 height: 20em;
 border: black solid;
 }
