@@ -32,6 +32,11 @@ const Products = () => {
     }
     function manageCategory(e){
         let value = e.target.innerText
+        const menu = document.getElementsByClassName("categorieList")
+        const arrow = document.getElementsByClassName("ArrowContainerImg")
+       menu[0].style.display ="none"
+       arrow[0].style.display = "none"
+
         setFilterParam(value)
     }
     return (
