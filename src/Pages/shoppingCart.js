@@ -11,7 +11,7 @@ function ShoppingCart(props){
     const Products = AllProducts();
     const idproductsBought = ProductsSelected()
     const [count, setCount] = useState(0);
-    const [Shipping, setShipping] = useState(0);
+    const [Shipping, setShipping] = useState(45.55);
 
 
     useEffect(() => {

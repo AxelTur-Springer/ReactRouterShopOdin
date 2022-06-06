@@ -40,7 +40,9 @@ const Products = () => {
                 <div className='ProductDescripcionShowing'>
                     <h2>{FilterParam}</h2>
                 </div>
-                <div onMouseOver={displayCategoryMenu} onMouseOut={HideCategoryMenu}>
+                <div onMouseOver={displayCategoryMenu} 
+                onClick={displayCategoryMenu}
+                onMouseOut={HideCategoryMenu}>
                     <div className='CategoriesDiv'>
                         <div>
                             <h3>Categorias</h3>
